@@ -1,0 +1,48 @@
+<a href="#/users">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add User</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="addUsers()">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" ng-model="user.name" placeholder="Name">
+        </div>
+           <div class="form-group">
+          <label>Email</label>
+          <input type="text" class="form-control" ng-model="user.email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label>Mobile</label>
+          <input type="number" class="form-control" ng-model="user.mobile" placeholder="Mobile">
+        </div>
+        <div class="form-group">
+          <label>Facebook url</label>
+          <input type="text" class="form-control" ng-model="user.facebook_url" placeholder="Facebook url">
+        </div>
+        <div class="form-group">
+          <label>Facebook id</label>
+          <input type="text" class="form-control" ng-model="user.facebook_id" placeholder="facebook id">
+        </div>
+        <div class="form-group">
+          <label>Education</label>
+          <textarea class="form-control" ng-model="user.education" placeholder="Education"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Image URL</label>
+          <input type="text" class="form-control" ng-model="user.image_url" placeholder="Image URL">
+        </div>
+       <div class="form-group">
+          <label>Hestory Work</label>
+          <input type="text" class="form-control" ng-model="user.hestory_work" placeholder="Hestory Work">
+        </div>
+       
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>

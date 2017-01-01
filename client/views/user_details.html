@@ -1,0 +1,29 @@
+<a href="#/users">Go Back</a>
+<div class="panel panel-default" ng-init="getUser()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{user.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{user.image_url}}">
+      </div>
+      <div class="col-md-8">
+        <p>{{user.email}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Mobile: {{user.mobile}}</li>
+          <li class="list-group-item">Facebook url: {{user.facebook_url}}</li>
+          <li class="list-group-item">Facebook id: {{user.facebook_id}}</li>
+          <li class="list-group-item">Education : {{user.education}}</li>
+		<li class="list-group-item">Hestory Work : {{user.hestory_work}}</li>
+		 <li class="list-group-item">Date enrolled : {{user.create_date}}</li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#!/users/edit/{{user._id}}">Edit</a> |  <a href="#" ng-click="removeUser(user._id)">Delete</a>
+  </div>
