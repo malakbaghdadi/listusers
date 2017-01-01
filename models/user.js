@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 // user Schema for the application not db
 //passed object to it
+// add validation if time allowed  
 const userSchema = mongoose.Schema({
 	name:{
 		type: String,
