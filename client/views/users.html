@@ -36,7 +36,7 @@ dir-paginate="user in users|orderBy:sortKey:reverse|filter:search|itemsPerPage:5
 -->
                             <tbody>
 		
-   <tr dir-paginate="user in users|orderBy:sortKey:reverse|filter:search|itemsPerPage:2">
+   <tr dir-paginate="user in users|orderBy:sortKey:reverse|filter:search|itemsPerPage:5">
 			<div class="col-md-6">
     		<div class="col-md-6">
 				<td>{{user.name}}</td>
@@ -50,7 +50,7 @@ dir-paginate="user in users|orderBy:sortKey:reverse|filter:search|itemsPerPage:5
 
                         </table>
 		    <dir-pagination-controls
-       max-size="2"
+       max-size="5"
        direction-links="true"
        boundary-links="true" >
     </dir-pagination-controls>

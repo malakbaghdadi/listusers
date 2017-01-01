@@ -30,6 +30,11 @@ function basicAPIRequest() {
           $("#work").append(response.work);
           $("#birthday").append(response.birthday);
           $("#email").append(response.email);
+          $("#context").append(response.context);
+          $("#hometown").append(response.hometown);
+          $("#link").append(response.link);
+          $("#location").append(response.location);
+          $("#website").append(response.website);
 	   	 
         }
     );
@@ -126,12 +131,24 @@ jQuery(document).ready(function(){
           <h4 class="modal-title">Your Facebook Informations  </h4>
         </div>
         <div class="modal-body">
-          fb-profile-picture: <div style="width:50% hight:20%" id="fb-profile-picture"></div>
-			name:     <div id="name"></div>
-			email:    <div id="email"></div>
-			user-id:  <div id="user-id"></div>
-			gender:   <div id="gender"></div>
-			birthday: <div id="birthday"></div>
+           <div style="width:50% hight:20%" id="fb-profile-picture"></div>
+			   <div id="name"></div>
+			   <div id="email"></div>
+			   <div id="user-id"></div>
+			   <div id="gender"></div>
+			   <div id="birthday"></div>
+			   <div id="context"></div>
+			   <div id="hometown"></div>
+			   <div id="link"></div>
+			   <div id="location"></div>
+			   <div id="website"></div>
+			
+<!--			 $("#context").append(response.context);
+          $("#hometown").append(response.hometown);
+          $("#link").append(response.link);
+          $("#location").append(response.location);
+          $("#website").append(response.website);
+	   	  -->
 			
         </div>
         <div class="modal-footer">
